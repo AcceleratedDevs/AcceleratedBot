@@ -10,7 +10,6 @@ const bot = new Discord.Client({
 const config = require("./config.json")
 require('dotenv').config();
 const { loadCommands } = require('./utils/loadCommands');
-const { loadgen } = require('./utils/loadgen');
 const DisTube = require('distube')
 
 bot.distube = new DisTube(bot, { searchSongs: false, emitNewSongOnly: true });
@@ -31,7 +30,6 @@ bot.aliases = new Discord.Collection();
 bot.emotes = config.emoji
 
 loadCommands(bot);
-//loadgen(bot);
 
 const verifyClaim = require('./reactionroles/verify.js');
 const roleClaim = require('./reactionroles/roles.js');
