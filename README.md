@@ -1,5 +1,5 @@
 # Disclaimer
-**Unlicensed**
+**License**
 
 _Copyright (c) 2022 Simer_
 
